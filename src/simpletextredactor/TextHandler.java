@@ -8,9 +8,11 @@ class TextHandler {
     }    
     
     // getting arrey of words 
-    @ann.Book(deley = 10, mName = "Java SE 1st edition", mNumOfPages = 522)
-    public String [] getWordArray (String text){
-        return text.split(";");
+    @ann.Book(deley = 2210, mName = "Java SE 1st edition", mNumOfPages = 522)
+    public void getWordArray (){
+        for(String letter : mText.split(";")){
+            System.out.println(mText.split(";")[1]);
+        }
     }
     
     // counting of symbol entery
