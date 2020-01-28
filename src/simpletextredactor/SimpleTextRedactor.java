@@ -10,6 +10,7 @@ import java.util.Scanner;
 public class SimpleTextRedactor {
     
     public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, InterruptedException {
+        
         TextHandler mTextObj = new TextHandler ("Some;text;in;the;line");
         Class<?> mClass = mTextObj.getClass();
         Method[] mMethods = mClass.getMethods();
@@ -21,7 +22,7 @@ public class SimpleTextRedactor {
         for (Method method : mMethods){
             if(method.isAnnotationPresent(classPath)){
                 Annotation annotation = method.getAnnotation(classPath);
-                 switch (mAnnotationPath) {
+                switch (mAnnotationPath) {
                     case "ann.Book":
                         Book bookAnnotation = (Book) annotation;
                         Thread.sleep(bookAnnotation.deley());
