@@ -21,10 +21,9 @@ class TextHandler {
                 + "ann.Article and deley 1500 is running");
     }
     
-    // outputting initial text
     @ann.Journal(mColor = "black", mJournText = "Quantum Physics", mPage = 28)
     public void mInitTextOut(){
-        System.out.println(mText);
+        System.out.println("Method with annotation ann.Journal and no 'deley' attribute");
     }
     
     @ann.Article (deley = 3000, mIndex = (float) 5.8, mTextType = "doc")
