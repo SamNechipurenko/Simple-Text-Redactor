@@ -11,7 +11,7 @@ public class SimpleTextRedactor {
     
     public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, InterruptedException {
         
-        TextHandler mTextObj = new TextHandler ("Some;text;in;the;line");
+        TextHandler mTextObj = new TextHandler ("Some text in the line");
         Class<?> mClass = mTextObj.getClass();
         Method[] mMethods = mClass.getMethods();
         System.out.print("the path of annotation': ");
